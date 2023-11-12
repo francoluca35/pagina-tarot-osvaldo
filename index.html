@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#55818F">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>O.A.T</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo"><img src="./img/navbar.png" alt=""></div>
+        <ul class="nav-list">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#jobs">Trabajos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <img src="./img/logo.png" alt="">
+        </div>
+    </nav>
+    <div class="home" id="home">
+        <div class="container-img">
+            <img src="./img/Logo-home.png" alt="">
+        </div>
+        <h1>Bienvenido a este espacio de acompañamiento</h1>
+        <p>Donde encontrarás todo lo que necesitas.</p>
+    </div>
+    <div class="nosotros" id="nosotros">
+        <div class="about">
+            <img src="./img/about.jpeg" alt="">
+            <div class="about-info">
+              <h2>Sobre Nosotros</h2>
+              <div class="divider"></div>
+              <p class="p1">Lectura de Tarot, Ayuda espiritual, trabajos de energia, Reiki, espiritismo
+                , 
+                Los trabajos son 100% efectivos. Soluciones inmediatas.
+                
+                Hacemos también trabajos a distancia.
+                (Trabajo a distancia de igual manera que de manera presencial).
+
+              </p>
+              
+              <p class="p2">Contamos con 20 años de experiencia.
+                Encontraremos juntos la solución a tus problemas.
+Aclaro dudas e inquietudes. </p>
+              <button class="download-cv" ><a href="#catalogo">Ver Catalogo</a></button>
+            </div>
+          </div>
+    </div>
+        
+<div class="container" id="servicios">
+
+    <h1 class="heading">Servicios</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/iconos-servicios/tarot.png" alt="">
+            <h3>TAROT</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
+        </div>
+
+        <div class="box">
+            <img src="img/iconos-servicios/raiki.png" alt="">
+            <h3>REIKI</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
+        </div>
+
+        <div class="box">
+            <img src="img/iconos-servicios/limpieza.png" alt="">
+            <h3>LIMPIEZA ESPIRITUAL</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
+        </div>
+
+        <div class="box">
+            <img src="img/iconos-servicios/union.png" alt="">
+            <h3>UNIONES FAMILIARES</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
+        </div>
+
+        <div class="box">
+            <img src="img/iconos-servicios/videncia.png" alt="">
+            <h3>VIDENCIA</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
+        </div>
+
+        <div class="box">
+            <img src="img/iconos-servicios/lectura.png" alt="">
+            <h3>LECTURA DE VELAS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="jobs" class="container-service">
+    <div class="container-title">
+        <h2>Galeria de trabajos</h2>
+    </div>
+    <div class="photo-grid">
+        <div class="grid-item">
+          <img src="img/fotos/1.jpeg" alt="Foto 1" onclick="openImage('img/fotos/1.jpeg')">
+        </div>
+        <div class="grid-item">
+          <img src="img/fotos/2.jpeg" alt="Foto 2" onclick="openImage('img/fotos/2.jpeg')">
+        </div>
+        <div class="grid-item">
+          <img src="img/fotos/3.jpeg" alt="Foto 3"  onclick="openImage('img/fotos/3.jpeg')">
+        </div>
+        <div class="grid-item">
+            <img src="img/fotos/4.jpeg" alt="Foto 4"  onclick="openImage('img/fotos/4.jpeg')"> 
+          </div>
+          <div class="grid-item">
+            <img src="img/fotos/5.jpeg" alt="Foto 5"  onclick="openImage('img/fotos/5.jpeg')">
+          </div>
+          <div class="grid-item">
+            <img src="img/fotos/6.jpeg" alt="Foto 6"  onclick="openImage('img/fotos/6.jpeg')">
+          </div>
+          <div class="grid-item">
+            <img src="img/fotos/7.jpeg" alt="Foto 7"  onclick="openImage('img/fotos/7.jpeg')">
+          </div>
+          <div class="grid-item">
+            <img src="img/fotos/8.jpeg" alt="Foto 8"  onclick="openImage('img/fotos/8.jpeg')">
+          </div>
+
+          <div class="modal" id="image-modal">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content" id="modal-image">
+          </div>
+        
+        <!-- Agrega más elementos según sea necesario -->
+      </div>
+</div>
+<footer id="contacto">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h2>Contacto</h2>
+        <p>Email: <br> <a href="mailto:franco@gmail.com">Osvaldo Angel</a></p>
+        <p>Telefono: <br> <a href="tel:+541132145999">+54 11-3214-5999</a></p>
+      </div>
+      <div class="footer-column">
+        <h2>Enlaces</h2>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#jobs">Trabajos</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Social</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100077664986389&locale=es_LA">Facebook</a></li>
+          <li><a href="https://w.app/wNvLS4">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/osvaldo.romanoangel/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Boletín</h2>
+        <p>Suscríbete para recibir actualizaciones</p>
+        <form>
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="button" onclick="subscribe()">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+    <p class="copy">Creado por <a href="https://francoluca35.github.io/Portafolios/">FranComputer</a> | © 2023 All rights reserved</p>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
