@@ -9,22 +9,23 @@
     <title>O.A.T</title>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="logo"><img src="./img/navbar.png" alt=""></div>
-        <ul class="nav-list">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#jobs">Trabajos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <div class="menu-toggle" id="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <img src="./img/logo.png" alt="">
-        </div>
-    </nav>
+  <nav class="navbar" id="navbar">
+    <div class="logo"><img src="./img/navbar.png" alt=""></div>
+    <ul class="nav-list">
+        <li><a href="#home" onclick="hideMenuAndDoSomething('Inicio')">Inicio</a></li>
+        <li><a href="#nosotros" onclick="hideMenuAndDoSomething('Nosotros')">Nosotros</a></li>
+        <li><a href="#servicios" onclick="hideMenuAndDoSomething('Servicios')">Servicios</a></li>
+        <li><a href="#jobs" onclick="hideMenuAndDoSomething('Trabajos')">Trabajos</a></li>
+        <li><a href="#contacto" onclick="hideMenuAndDoSomething('Contacto')">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <img src="./img/logo.png" alt="">
+    </div>
+</nav>
+
     <div class="home" id="home">
         <div class="container-img">
             <img src="./img/Logo-home.png" alt="">
@@ -50,7 +51,15 @@
               <p class="p2">Contamos con 20 años de experiencia.
                 Encontraremos juntos la solución a tus problemas.
 Aclaro dudas e inquietudes. </p>
-              <button class="download-cv" ><a href="#catalogo">Ver Catalogo</a></button>
+              <button class="download-cv" onclick="openPDF()">Ver Catalogo</button>
+              <div id="pdfModal">
+                <div id="pdfContainer">
+                    <span id="closeBtn" onclick="closePDF()">X</span>
+                    <iframe id="pdfViewer" src=""></iframe>
+                </div>
+            </div>
+            
+            
             </div>
           </div>
     </div>
@@ -64,42 +73,42 @@ Aclaro dudas e inquietudes. </p>
         <div class="box">
             <img src="img/iconos-servicios/tarot.png" alt="">
             <h3>TAROT</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <p></p>
             <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
         </div>
 
         <div class="box">
             <img src="img/iconos-servicios/raiki.png" alt="">
             <h3>REIKI</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <p></p>
             <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
         </div>
 
         <div class="box">
             <img src="img/iconos-servicios/limpieza.png" alt="">
             <h3>LIMPIEZA ESPIRITUAL</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <p></p>
             <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
         </div>
 
         <div class="box">
             <img src="img/iconos-servicios/union.png" alt="">
             <h3>UNIONES FAMILIARES</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <p></p>
             <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
         </div>
 
         <div class="box">
             <img src="img/iconos-servicios/videncia.png" alt="">
             <h3>VIDENCIA</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <p></p>
             <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
         </div>
 
         <div class="box">
             <img src="img/iconos-servicios/lectura.png" alt="">
             <h3>LECTURA DE VELAS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <p></p>
             <a href="https://w.app/wNvLS4" class="btn">Comunicarse</a>
         </div>
 
@@ -176,6 +185,11 @@ Aclaro dudas e inquietudes. </p>
         <form>
           <input type="email" placeholder="Tu correo electrónico" required>
           <button type="button" onclick="subscribe()">Suscribirse</button>
+          <div id="overlay"></div>
+<div id="custom-alert">
+    <p>¡Gracias por suscribirte a Osvaldo Angel Tarot!</p>
+    <button class="close-btn" onclick="closeAlert()">Cerrar</button>
+</div>
         </form>
       </div>
     </div>
